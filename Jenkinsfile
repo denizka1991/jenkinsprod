@@ -37,7 +37,7 @@ podTemplate(label: label, containers: [
                         //set SECRET with the credential content
                             sh 'ls -al $GOOGLE_CREDENTIALS'
                             sh 'mkdir -p creds'
-                            sh "cp \$GOOGLE_CREDENTIALS ./creds/d3tf-238518-b1dc0018dc93.json"
+                            sh "cp \$GOOGLE_CREDENTIALS ./creds/test.json"
                             sh 'terraform init'
                             sh 'terraform plan -out myplan'
                             //sh 'terraform apply -auto-approve -input=false myplan'
