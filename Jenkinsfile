@@ -25,7 +25,7 @@ podTemplate(label: label, containers: [
 
                     stage('Checkout repo'){
                         checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-                            userRemoteConfigs: [[url: 'https://https://github.com/denizka1991/jenkinsprod.git']]])
+                            userRemoteConfigs: [[url: 'https://github.com/denizka1991/jenkinsprod.git']]])
                         }
 
 
