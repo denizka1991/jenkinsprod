@@ -7,7 +7,7 @@ variable "username" {
 
 terraform {
   backend "gcs" {
-    bucket = "tfd3state"
+    bucket = "tfd3state1"
     prefix = "demo"
    // credentials = "./creds/d3tf-238518-b1dc0018dc93.json"
   }
