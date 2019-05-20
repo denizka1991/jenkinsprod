@@ -1,4 +1,4 @@
-def label = "jenpod"
+def label = "mypod"
 
 
 properties([parameters([choice(choices: ['terraform apply', 'terraform destroy'], description: 'apply', name: 'apply')])])
@@ -24,8 +24,8 @@ podTemplate(label: label, containers: [
 
 
                     stage('Checkout repo'){
-                        checkout([$class: 'GitSCM', branches: [[name: '*/test1']],
-                            userRemoteConfigs: [[url: 'https://github.com/Yuriy6735/Demo3.git']]])
+                        checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+                            userRemoteConfigs: [[url: 'https://https://github.com/denizka1991/jenkinsprod.git']]])
                         }
 
 
