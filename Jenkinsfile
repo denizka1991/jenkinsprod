@@ -36,7 +36,7 @@ podTemplate(label: label, containers: [
                             sh 'ls -al $SVC_ACCOUNT_KEY'
                             sh 'mkdir -p creds'
                             sh "cp \$SVC_ACCOUNT_KEY ./creds/key.json"
-                            sh "cat creds/test.json"
+                         //   sh "cat creds/test.json"
                             sh 'terraform init'
                             sh 'terraform plan -out myplan'
                             //sh 'terraform apply -auto-approve -input=false myplan'
